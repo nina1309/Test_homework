@@ -34,4 +34,4 @@ prefix func ± (string: String) -> String {
     "\(string)"
 }
 
-±"яблочко"
+±" яблочко "
