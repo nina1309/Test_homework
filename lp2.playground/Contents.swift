@@ -1,17 +1,30 @@
 import UIKit
- //задание  1
+//задание  1
 // проверочка
 
-
-func myPow(_ x: Decimal, _ y: Int) -> Decimal?{
-    if y<0{
-        return pow(1/x,y*(-1))
-    }else if y==0 && x==0{
-    return nil
+func myPow(_ x: Double, _ y: Int) -> Double?{
+    if y == 0{
+        return 1
     }
-return pow(x,y)
+    if y < 0 && x==0{
+        return nil
+    }
+    var i = 1.0
+    if y < 0 {
+       let x = 1 / x
+        for _ in 1...abs(y){
+        i *= x
+        }
+        
+    }
+    if y > 0{
+        for _ in 1...y{
+        i *= x
+        }
+    }
+    return i
 }
- myPow(-3, 3)
+ myPow(-2, -1)
 
 // задание 2
 
