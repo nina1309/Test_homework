@@ -1,5 +1,6 @@
 import UIKit
  //задание  1
+// проверочка
 
 
 func myPow(_ x: Decimal, _ y: Int) -> Decimal?{
