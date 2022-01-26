@@ -20,7 +20,7 @@ class Class{
     func klass(){
         for i in 1...countStudent{
             let student:Student = Student(name:" \(String(describing: names.randomElement()!))", surename: "\(String(describing: surenames.randomElement()!))")
-            print("\(i) \(student.name), \(student.surename)")
+            print("\(i) \(student.name) \(student.surename)")
             classik.append(student)
         }
     }
